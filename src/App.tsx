@@ -3,6 +3,7 @@ import RoutesPage from "./pages/routes/routesPage"
 import StopsPage from "./pages/stops/stopsPage"
 import RouteStopsPage from "./pages/routes/[id]/routeStopsPage"
 import Layout from "./components/layout"
+import ReportPage from "./pages/reports/reportPage"
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/routes" element={<RoutesPage />} />
         <Route path="/stops/search" element={<StopsPage />} />
         <Route path="/routes/:id/stops" element={<RouteStopsPage />} />
+        <Route path="/report" element={<ReportPage />} />
+
       </Routes>
     </Layout>
   )

@@ -1,4 +1,4 @@
-import { DirectionsBus, LocationOn } from "@mui/icons-material";
+import { Analytics, DirectionsBus, LocationOn, Report } from "@mui/icons-material";
 import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 
@@ -25,6 +25,13 @@ export default function Header() {
                     color={location.pathname.includes('/stops') ? 'secondary' : 'inherit'}
                 >
                     <LocationOn />
+                </IconButton>
+                <IconButton
+                    component={Link}
+                    to="/report"
+                    color={location.pathname.includes('/report') ? 'secondary' : 'inherit'}
+                >
+                    <Analytics />
                 </IconButton>
             </Toolbar>
         </AppBar>

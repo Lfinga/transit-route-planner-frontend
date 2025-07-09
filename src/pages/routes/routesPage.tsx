@@ -57,6 +57,10 @@ export default function RoutesPage() {
                 align="center"
             >
                 Routes
+                <br />
+                <span style={{ fontSize: '16px' }}>
+                    Click on a route to view its stops
+                </span>
             </Typography>
 
             <Paper
